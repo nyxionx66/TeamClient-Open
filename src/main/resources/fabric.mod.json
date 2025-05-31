@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "teamclient",
+  "version": "${version}",
+
+  "name": "Team Client",
+  "description": "A feature-rich client-side Minecraft mod",
+  "authors": [
+    "ash"
+  ],
+  "contact": {
+    "homepage": "https://github.com/ash/teamclient",
+    "issues": "https://github.com/ash/teamclient/issues"
+  },
+
+  "license": "MIT",
+  "icon": "assets/team-client/icon.png",
+
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.ash.team.TeamClient"
+    ]
+  },
+  "mixins": [
+    "teamclient.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "fabric-api": "*",
+    "minecraft": "~1.21.5",
+    "java": ">=17"
+  }
+}
